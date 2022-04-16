@@ -1,9 +1,3 @@
-var i=[];
-i.spring("img/spring.gif");
-i.summer("img/summer.gif");
-i.autumn("img/autumn.gif");
-i.winter("img/winter.gif");
-
 
 function spring(){
 document.getElementById("img").src="spring.gif";
@@ -75,4 +69,8 @@ document.getElementById("gif").src="Friday.gif";
 }
 function Saturday(){
 document.getElementById("gif").src="Saturday.gif";
+}
+function firework(){
+  var obj=document.getElementById("ts5")
+  obj.style.background="50.jpg no-repeat ";
 }
