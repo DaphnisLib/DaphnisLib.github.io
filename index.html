@@ -1,70 +1,430 @@
-<!DOCTYPE html>
-<html> <head>
- <meta charset="utf-8">
- <title>KPOP 词典</title>
- <script src="1script.js"></script>
- <script>
- var response=prompt("What's your name?")
- alert(response+",let's start a journey of this magic Kpop world!")
- </script>
-<link rel="stylesheet" href="kpopstyle.css">
-</head>
-<body>
-  <div class="ts1">
-  <p style="text-align: center;"><img src="welcome.gif" width="200g" height="133g"></p>
-  <h1 style="text-align: center;">WELCOME TO A STRANGE WORLD</h1>
-</div>
-<div class="ts2">
-  <h2>我们的四季</h2>
-  <p ><img src="life.jpg" id="img" width="400g" height="225g" ></p>
-    <button onclick="spring()">春</button>
-    <button onclick="summer()">夏</button>
-    <button onclick="autumn()">秋</button>
-    <button onclick="winter()">冬</button>
-  </div>
-<div class="ts3">
-  <h3>循环的十二度</h3>
-  <p><img src="loona.gif" id="images" width="600g" height="400g"></p>
-  <button onclick="Jan()">一月</button>
-  <button onclick="Feb()">二月</button>
-  <button onclick="Mar()">三月</button>
-  <button onclick="Apr()">四月</button>
-  <button onclick="May()">五月</button>
-  <button onclick="Jun()">六月</button>
-  <button onclick="Jul()">七月</button>
-  <button onclick="Aug()">八月</button>
-  <button onclick="Sept()">九月</button>
-  <button onclick="Oct()">十月</button>
-  <button onclick="Nov()">十一月</button>
-  <button onclick="Dec()">十二月</button>
-</div>
-<div class="ts4">
-  <h4>247行星环绕</h4>
-  <p><img src="weeekly.jpg" id="gif" width="400g" height="266g"></p>
-  <button onclick="Sunday()">日曜日</button>
-  <button onclick="Monday()">月曜日</button>
-  <button onclick="Tuesday()">火曜日</button>
-  <button onclick="Wednesday()">水曜日</button>
-  <button onclick="Thursday()">木曜日</button>
-  <button onclick="Friday()">金曜日</button>
-  <button onclick="Saturday()">土曜日</button>
-</div>
-<div class="ts5" id="ts5">
-  <p class="tst4">在银河流淌的宇宙里<br>
-  <img src="wjsn.gif" width="300g" height="168g"><br>
-  少女们让时光倒流<br>
-  <img src="rough.gif" width="400g" height="225g"><br>
-  莫比乌斯环相扣<br>
-  你是否愿意和我回到最初<br>
-  <button id="test">YES</button>
-  <script>
-  test.onclick=function(){
-document.body.scrollTop=document.documentElement.scrollTop=0;
-  }
-  </script>
-  <button onclick="firework.gif">END</button>
-</p>
-</div>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>IMJMWDP</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="IMJMWDP.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+  </head>
 
-  </body>
+<body>
+<!--Navigation-->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#000000">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src= "img/logo1.png"height=80></a>
+      <button class="navbar-toggler" tybe="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div calss="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml=auto">
+            <li class="nav-item  active">
+              <a class="nav-link" herf="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" herf="#">MEMBER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" herf="#">MUSIC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" herf="#">LIVE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" herf="#">MORE</a>
+            </li>
+          </ul>
+        </div>
+   </div>
+</nav>
+<!--img-->
+<div class="bd-example">
+  <div id="slides" class="carousel slide carousel-dark" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#slides" data-slide-to="0" class="active"></li>
+      <li data-target="#slides" data-slide-to="1"></li>
+      <li data-target="#slides" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/slide1.jpg" class="d-block w-100"  alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Just Music</h3>
+          <p>Osshun Gum - Black Nut - Swings - C JAMM - Giriboy - Nochang - Han Yohan</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Indigo Music</h3>
+          <p>Kid Milli - Justhis - Swings - jvcki Wai - No : el</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide3.jpg" class="d-block w-100"  alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Wedaplugg Records</h3>
+          <p>Good girl behind photo.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<!--introduction-->
+<div class="container-fluid">
+  <div class="row justify-content-md-center">
+    <div class="col-xs-12 col-sm-12 col-lg-10 col-xl-8">
+      <h1 class="display-4 text-center font-weight-bold font-italic">What is IMJMWDP</h1>
+      <p class="lead text-center">IMJMWDP是指Indigo music、Just music、Wedaplugg Records三个以Swings、Giriboy为中心平行的音乐厂牌，虽然因为运作方式和艺人风格的不同分在三个公司运营，但本质上被圈内和乐迷视为同一个音乐家族。</br>
+      <br>Just Music最初是Brand New Music的旗下厂牌。在Swings和BNM合同结束后，于2014年成为独立厂牌。</br>
+      <br>Indigo是由Swings 、YangHongWon、和Kid milli于2017年4月创立的厂牌，同年8月结束了7年独立音乐人生活的Justhis加入，声称喜欢indigo自由不对艺人多加约束的氛围，2018年又加入个性女rapper Jacki Wai和在高等rapper中表现出众的No:el。</br>
+      <br>喊着今年是我们的Indigo，拿下了2019年韩国嘻哈大赏的年度最佳厂牌。</br>
+      <br>但是随着爆出酒驾的No:el合约到期离开，不知道理由的Jacki Wai的到期解约，团体活动的匮乏，粉丝们对IM的未来也冲满了不安。</br>
+      <br>2018年新厂牌Wedaplugg诞生了，厂牌大量使用英语，并具有韩国嘻哈中少有的音乐风格。</P>
+   </div>
+ </div>
+</div>
+<!--Member-->
+<hr class="my-4">
+<h1 class="display-4 text-center font-weight-bold font-italic">Member Of IMJMWDP</h1>
+<br></br>
+<div class="container-fluid">
+  <div class="row text-center">
+    <div class="col-xs-12 col-sm-6 col-md-6">
+      <img src="img/swings.png" style="width: 200px;height: 250px">
+      <h3>Swings@itjustswings</h3>
+      <p>rapper</br>
+         1986.10.14</br>
+         JM厂牌的前社长，于20年初卸任并作为artist加入P nation。Swings的rap name取自他的上上下下摇摆的情绪，也因为心理健康原因提前退伍，在节目上坦诚自己曾有两例不记录在案的缓刑罪行。作为SMTM8导师的他被争议困扰，在SMTM9以选手身份出现，回归初心争取认可。其实身为韩国嘻哈的领军人物，有着破釜沉舟的勇气，和实力支撑的底气。一直以来展现着以强大的精神鼓舞支持身边人，发掘带领公司成员的模样，即使卸任也是永远的文社。</p>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6">
+      <img src="img/hsy.jpg" style="width:200px;height: 250px">
+      <h3>Giriboy@giriboy91</h3>
+      <p>Rapper/producer</br>
+         1991.1.24</br>
+        Giriboy的韩文意思为看到前方的路，是现在韩国嘻哈音乐最著名也是最顶尖的制作人之一，因为梦想的其他职业都需要钱起步，选择了相对最零成本只需要有嘴就行的rapper为职业，从2011年出道起就以高质高量的专辑发布着，现在已是拥有9辑的音乐人，从音乐上讲没有低潮期，也没有自我重复的样子。虽然总是以吊儿郎当不怎么专注的样子出现，其实是一个心思缜密的人，15年没有药物就没法工作精神上极度的不稳定，甚至想要放弃做音乐，也有因为无聊时剃成光头的经验。不存在喜欢韩国嘻哈音乐但没有听过Giriboy的人。</p>
+    </div>
+  </div>
+</div>
+<!--JM-->
+<h2 class="display-4 text-center">Just Music</h2>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-2">
+      <div class="card" style="width:16rem;height:50rem;">
+        <img class="card-img-top" src="img/hyh.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Han Yohan</h5>
+          <p class="card-text">@yohanheaven</br>
+          Rapper/rockstar</br>
+          1991.12.3</br>
+          범퍼카</br>
+          中学时期学习古典音乐，以第一名的成绩进入湖原大学实用音乐系。作为吉他手活动着直到加入JM，成为歌手出道，展现了摇滚和嘻哈结合在一起的音乐，又以歌曲中的感性受到盛赞。同时作为youtuber活跃中。</p>
+          <a href="https://namu.wiki/w/%ED%95%9C%EC%9A%94%ED%95%9C" class="btn">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card" style="width:16rem;height:50rem;">
+        <img class="card-img-top" src="img/nochang.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Just Nochang</h5>
+          <p class="card-text">@gnncjegrgr</br>
+          Producer/artist</br>
+          1991.9.24</br>
+          춤추자</br>
+          曾用名天才Nochang，寓意渴望成为天才，19年改名为只是Nochang，作为Giriboy的小学同学被介绍给swings。以天才制作人的身份活跃在音乐圈中，15年因为严重的精神疾病没有办法继续工作隐退，逐渐消失。2019年才慢慢回归到大众视野中，间歇性地进行着音乐活动。他所做的实验性音乐，常常不能被听众所理解，即使如此喜欢他的人称这个世界上再也找不到像他一样的音乐家，被黑泡乐迷疯狂膜拜着。</p>
+          <a href="https://namu.wiki/w/%EA%B7%B8%EB%83%A5%EB%85%B8%EC%B0%BD" class="btn">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card" style="width:16rem;height:50rem;">
+        <img class="card-img-top" src="img/blacknut.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Black Nut</h5>
+          <p class="card-text">@gaygaykim</br>
+          Rapper/所属silkyBois</br>
+          1989.1.1</br>
+          100</br>
+          JM的前临时社长，在SMTM中脱了裤子的男人，在法庭上宣传专辑，超越问题儿的畸形儿。以发表diss了全黑泡圈的100 单曲出道，2015年说要出的正规专辑到现在都没有踪影。参与了JM社内多人的Featuring制作，很多乐迷还在等GOD大雄带着专辑回归中。</p>
+          <a href="https://namu.wiki/w/%EB%B8%94%EB%9E%99%EB%84%9B" class="btn">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card" style="width:16rem;height:50rem;">
+        <img class="card-img-top" src="img/jimmy.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Jimmy paige</h5>
+          <p class="card-text">@teriyakipapi</br>
+          A.k.a goretexx</br>
+          Model/Rapper/所属silkyBois</br>
+          1990.9.3</br>
+          Silky bois</br>
+          京畿大学模特系出身，以剃光头的形象为著并保持至今，有进入世界男模榜前50的历史，同时作为R&B歌手和Black Nut组合活动着。</p>
+          <a href="https://namu.wiki/w/JIMMY%20PAIGE?from=%EB%B0%95%EC%84%B1%EC%A7%84%28%EB%AA%A8%EB%8D%B8%29" class="btn">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card" style="width:16rem;height:50rem;">
+        <img class="card-img-top" src="img/jinbo.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Jinbo</h5>
+          <p class="card-text">@jinbosuperfreak</br>
+          Rapper/producer</br>
+          1982.7.7</br>
+          Twirl</br>
+          作为Producer曾为Beenzino，J-hope的歌曲进行制作，也作为作曲家为Red Velvet，BTS等写歌，因为相同的价值观、蓝图等被Swings引入just music，感觉拥有了去完成更伟大宏图的坚实的后援军。作为Black Nut的粉丝社内最想和他进行合作。</p>
+          <a href="https://namu.wiki/w/Jinbo" class="btn">More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--IM-->
+<h2 class="display-4 text-center">Indigo Music</h2>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-2">
+      <div class="card" style="width:16rem;height:42rem;">
+        <img class="card-img-top" src="img/kidmilli.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Kid Milli</h5>
+          <p class="card-text">@kidcozyboy</br>
+          Rapper</br>
+          1993.10.26</br>
+          WHY DO ****BOIS HANG OUT ON THE NET</br>
+          时装设计师，曾梦想成为星球争霸职业玩家，但是在不断地输比赛中看不到未来，在现场听到Beenzino的If i die tomorrow后开始接触说唱，在Swings的说唱课程中学习几年后加入indigo。作为独一无二的说唱歌手享受着人气，又不曾变化。</p>
+          <a href="https://namu.wiki/w/Kid%20Milli" class="btn">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card" style="width:16rem;height:42rem;">
+        <img class="card-img-top" src="img/yhw.jpg">
+        <div class="card-body">
+          <h5 class="card-title">YANGHONGWON</h5>
+          <p class="card-text">@yanghongwon</br>
+          Rapper</br>
+          1999.1.12</br>
+          Gin Tonic</br>
+          获得高等rapper冠军后加入indigo，曾说自己的收入由0增加了100倍，00年rapper的领头羊。</p>
+          <a href="https://namu.wiki/w/%EC%96%91%ED%99%8D%EC%9B%90" class="btn">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card" style="width:16rem;height:42rem;">
+        <img class="card-img-top" src="img/justhis.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Justhis</h5>
+          <p class="card-text">@gaygaykim</br>
+          Rapper</br>
+          1991.5.7</br>
+          indiGO</br>
+          Justhis是梦中挂在美术馆自画像的命名，18年认为已经失去了做音乐的趣味感到空虚想要隐退，之后以低频率Feat的形式半消失的状态做音乐，20年逐渐恢复常态，甚至上SMTM9做导师，被韩国黑泡大赏提名为2021年度艺术家。</p>
+          <a href="https://namu.wiki/w/JUSTHIS" class="btn">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card" style="width:16rem;height:42rem;">
+        <img class="card-img-top" src="img/ron.png">
+        <div class="card-body">
+          <h5 class="card-title">Ron</h5>
+          <p class="card-text">@ronperiod</br>
+          Musician</br>
+          1997.9.12</br>
+          Einstein</br>
+          之所以染红头发是因为金鱼很漂亮，通过和Kid milli合作的音乐dress进入IM。</p>
+          <a href="https://namu.wiki/w/ron(%EB%9E%98%ED%8D%BC)" class="btn">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card" style="width:16rem;height:42rem;">
+        <img class="card-img-top" src="img/ksmartboi.jpg">
+        <div class="card-body">
+          <h5 class="card-title">김상민그는감히전설이라말할수있다(ksmartboi)</h5>
+          <p class="card-text">@pinkmcmboi</br>
+          Rapper</br>
+          2004.6.20</br>
+          Earth is Flatt 2</br>
+        Flat Earth Society队长 ，Rap名是金尚敏斗胆敢自称为传奇，出道便引领韩国10代rapper破格性的Hyperpop风潮。</p>
+          <a href="https://namu.wiki/w/%EA%B9%80%EC%83%81%EB%AF%BC%EA%B7%B8%EB%8A%94%EA%B0%90%ED%9E%88%EC%A0%84%EC%84%A4%EC%9D%B4%EB%9D%BC%EA%B3%A0%ED%95%A0%EC%88%98%EC%9E%88%EB%8B%A4" class="btn">More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--WDP-->
+<h2 class="display-4 text-center">Wedaplugg Records</h2>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-2">
+      <div class="card" style="width:16rem;height:33rem;">
+        <img class="card-img-top" src="img/yunhway.png">
+        <div class="card-body">
+          <h5 class="card-title">YUNHWAY</h5>
+          <p class="card-text">@yunhway</br>
+          Rapper</br>
+          1995.4.6</br>
+          Fatal love</br>
+          对止痛药过敏，在国外生活15年回国，因为独特的声线受到关注与喜爱。</p>
+          <a href="https://namu.wiki/w/YUNHWAY" class="btn">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card" style="width:16rem;height:33rem;">
+        <img class="card-img-top" src="img/jhnovr.png">
+        <div class="card-body">
+          <h5 class="card-title">Jhnovr</h5>
+          <p class="card-text">@jhnovr</br>
+          Musician</br>
+          1993.6.21</br>
+          Strangers Again</br>
+          R&B音乐人，曾用New Day作为活动名，在Dirty Diana中向MJ致敬。</p>
+          <a href="https://namu.wiki/w/Jhnovr" class="btn">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card" style="width:16rem;height:33rem;">
+        <img class="card-img-top" src="img/liltachi.png">
+        <div class="card-body">
+          <h5 class="card-title">Lil tachi</h5>
+          <p class="card-text">@liltachi</br>
+          Rapper</br>
+          2002.2.4</br>
+          DOGSICK</br>
+          Trap为主，常被批评歌词无意义，但是不在意。</p>
+          <a href="https://namu.wiki/w/Lil%20tachi" class="btn">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card" style="width:16rem;height:33rem;">
+        <img class="card-img-top" src="img/saewoo.jpg">
+        <div class="card-body">
+          <h5 class="card-title">sAewoo</h5>
+          <p class="card-text">@sAewoo_ng</br>
+          Producer</br>
+          1991.7.16</br>
+          Whatever</br>
+          担任电影《大人们不知道》音乐总监，负责IMJMWDP所有歌曲的制作，为了高考学钢琴，钢琴水平很高。</p>
+          <a href="https://namu.wiki/w/sAewoo" class="btn">More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-2">
+      <div class="card" style="width:16rem;height:32rem;">
+        <img class="card-img-top" src="img/olnl.jpg">
+        <div class="card-body">
+          <h5 class="card-title">OLNL</h5>
+          <p class="card-text">@hiolnl</br>
+          Rapper</br>
+          1996.9.18</br>
+          Zero%</br>
+          SMTM777进入半决赛，是一个起伏严重的人，讨厌被称作可爱。</p>
+          <a href="https://namu.wiki/w/OLNL" class="btn">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card" style="width:16rem;height:32rem;">
+        <img class="card-img-top" src="img/kvsh.png">
+        <div class="card-body">
+          <h5 class="card-title">Kvsh</h5>
+          <p class="card-text">@thiskvsh</br>
+          Musician</br>
+          1998.12.21</br>
+          Caffeine</br>
+          不能食用咖啡因的海鲜过敏者，倾向于快速删除insta照片。</p>
+          <a href="https://namu.wiki/w/Kvsh" class="btn">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card" style="width:16rem;height:32rem;">
+        <img class="card-img-top" src="img/yuleum.jpg">
+        <div class="card-body">
+          <h5 class="card-title">YULEUM</h5>
+          <p class="card-text">@yuleumhong</br>
+          Aritist</br>
+          2009.7.4</br>
+          The Child’s Mad 2</br>
+          IMJMWDP最年轻的成员，拥有多样的才能与发展潜力。</p>
+          <a href="https://namu.wiki/w/YULEUM" class="btn">More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--fixed figure-->
+<figure>
+  <div class="fixed-wrap">
+    <div id="fixed">
+    </div>
+  </div>
+</figure>
+<!--ex member-->
+<button class="ex btn-block" data-toggle="collapse" data-target="#exmember">EX MEMBER
+  <div id="exmember" class="collapse">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-xs-2 col-sm-2 col-md-2">
+          <img class="jpg rounded-circle" src="img/billstax.jpg" style="width:150px;height:150px">
+          <h4>Bill Stax</h4>
+       </div>
+       <div class="col-xs-2 col-sm-2 col-md-2">
+         <img class="jpg rounded-circle" src="img/ogum.jpg" style="width:150px;height:150px">
+         <h4>Osshum Gum</h4>
+       </div>
+       <div class="col-xs-2 col-sm-2 col-md-2">
+         <img class="jpg rounded-circle" src="img/cjamm.jpg" style="width:150px;height:150px">
+         <h4>C Jamm</h4>
+      </div>
+      <div class="col-xs-2 col-sm-2 col-md-2">
+        <img class="jpg rounded-circle" src="img/jyj.jpg" style="width:150px;height:150px">
+        <h4>No:el</h4>
+      </div>
+      <div class="col-xs-2 col-sm-2 col-md-2">
+        <img class="jpg rounded-circle" src="img/wai.jpg" style="width:150px;height:150px">
+        <h4>Jacki Wai</h4>
+      </div>
+     </div>
+   </div>
+ </div>
+</button>
+<!--music-->
+
+</body>
 </html>
